@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/inputs"
+        style="@style/TextAppearance.AppCompat.Large"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:paddingStart="@dimen/button_padding"
+        android:paddingTop="24dp"
+        android:paddingEnd="@dimen/button_padding"
+        android:paddingBottom="24dp"
+        tools:text="@string/app_name" />
+
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inputs"
+        android:layout_alignLeft="@id/action_plus"
+        android:layout_alignParentRight="true"
+        android:padding="@dimen/button_padding" />
+
+    <TextView
+        android:id="@+id/result"
+        style="@style/TextAppearance.AppCompat.Medium"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignTop="@id/clear"
+        android:layout_alignBottom="@id/clear"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@id/three" />
+
+    <Button
+        android:id="@+id/one"
+        style="@style/TextAppearance.AppCompat.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/result"
+        android:layout_alignParentLeft="true"
+        android:padding="@dimen/button_padding"
+        tools:text="1" />
+
+    <Button
+        android:id="@+id/two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/result"
+        android:layout_toRightOf="@id/one"
+        android:padding="@dimen/button_padding" />
+
+    <Button
+        android:id="@+id/three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/result"
+        android:layout_toRightOf="@id/two"
+        android:padding="@dimen/button_padding" />
+
+    <Button
+        android:id="@+id/action_plus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/result"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/three" />
+
+    <Button
+        android:id="@+id/four"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/one"
+        android:padding="@dimen/button_padding" />
+
+    <Button
+        android:id="@+id/five"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/two"
+        android:layout_alignLeft="@id/two"
+        android:padding="@dimen/button_padding" />
+
+    <Button
+        android:id="@+id/six"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/three"
+        android:layout_alignLeft="@id/three" />
+
+
+</RelativeLayout>
